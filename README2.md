@@ -239,6 +239,18 @@ Check the version of Go
 ```
 go version
 
+
+### Trouble shoot
+
+
+**Error**
+
+![error](https://github.com/palash80/Palash-repo/assets/153359214/99b2497b-56a5-4616-bc63-b8f5cdf2108f)
+
+
+**NOTE**:- When you execute the script, before make sure you have allowed the specific ports & once you found error 
+           in the interface replace your public ip address with repect to locahost / with specific port. 
+
 ### Endpoints Information
 
 | **Endpoint**                     | **API Method** | **Description**                                                                                      |
