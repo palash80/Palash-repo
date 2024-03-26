@@ -70,6 +70,12 @@ The Employee REST API, developed in Golang, manages all employee-related transac
 | 6379 | Redis                   |
 
 
+
+### Architecture
+
+![image](https://github.com/palash80/Palash-repo/assets/153359214/05379b8b-f11e-4d23-bb9e-8cd73971df38)
+
+
 ### Pre-requisites
 
 The application's setup requirements are minimal, primarily necessitating only database connectivity. Although optional, the integration of Redis as a cache system can enhance performance, yet it is not.
