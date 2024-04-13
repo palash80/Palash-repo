@@ -1,0 +1,21 @@
+
+name: Merge Notification
+
+on:
+  pull_request:
+    types: [closed]
+
+jobs:
+  send_notification:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out code
+      uses: actions/checkout@v2
+
+    - name: Notify on merge
+      if: github.event.pull_request.merged == true
+      run: |
+        # Use your email sending command/script here
+        # Example: Using `sendmail` command line utility
+        echo "Subject: Branch Merged Notification\n\nA branch has been merged." | sendmail -t palashkamble786@gmail.com
