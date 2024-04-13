@@ -7,6 +7,23 @@
 |:----------------:|:------------:|:---------:|:------------------:|:----------------:|
 | Palash Kamble  | 13-04-2024 | 1.0     | Palash Kamble    | 13-04-2024     |
 
+---
+
+| Sr. No. | Section                  |
+|:---------:|--------------------------|
+| 1.      | [Introduction](#introduction)   |
+| 2.      | [Purpose](#purpose)             |
+| 3.      | [Work Flow](#work-flow)         |
+| 4.      | [Tools](#tools)                 |
+| 5.      | [Comparison](#comparison)       |
+| 6.      | [Advantages](#advantages)       |
+| 7.      | [Best Practices](#best-practices)|
+| 8.      | [Why Use Maven?](#why-use-maven)|
+| 9.      | [Proof of Concept](#proof-of-concept)|
+| 10.     | [Conclusion](#conclusion)       |
+| 11.     | [Contact](#contact)             |
+| 12.     | [References](#references)       |
+
 
 
 ---
@@ -199,12 +216,67 @@ Maven is a popular build automation tool primarily used for managing dependencie
   Maven follows a specific lifecycle consisting of phases. You can execute these phases using Maven commands:
 
  **clean:** Cleans the project by removing the target directory.
+
  **validate:** Validates the project.
+
  **compile:** Compiles the source code.
+
  **test:** Executes the tests.
+
  **package:** Packages the compiled code into a JAR or WAR file.
+
  **install:** Installs the package into the local repository.
- **deploy:** Deploys the package to a remote repository.
- **site:** Generates project documentation.
+
+**deploy:** Deploys the package to a remote repository.
+ 
+**site:** Generates project documentation.
+
+
+- Removes the tagret folder inside the project if any 
+
+ <pre><code>maven clean </code></pre>
+
+![image](https://github.com/palash80/Palash-repo/assets/153359214/40f780fd-0eb6-4e78-ae5e-29d733d7b4ff)
+
+- This will validate the files and folders in side the project
+
+ <pre><code>mvn validate</code></pre>
+
+![image](https://github.com/palash80/Palash-repo/assets/153359214/0f247f9a-0147-4a99-9d19-6974fd01b9d5)
+
+-  This will compile the project 
+
+<pre><code>mvn compile</code></pre>
+
+![image](https://github.com/palash80/Palash-repo/assets/153359214/3312bae3-8272-4164-8aff-a70434c46bba)
+
+---
+
+## Conclusion
+
+In conclusin java code compilation is a fundamental process for translating high-level source code into machine-readable instructions. Maven, Ant, and Gradle are key tools used to automate and streamline this process, managing dependencies and executing build lifecycle phases. Maven, in particular, excels in dependency management and convention-based configuration.
+Adhering to best practices such as automating builds, managing dependencies, and testing code ensures efficient and error-free compilation. The provided proof of concept demonstrated the installation of necessary tools, building a Java project with Maven, and executing Maven lifecycle phases to compile the code successfully.
+
+
+---
+
+
+## Contact
+
+
+Name           | Email Address
+---------------|----------------------
+Palash Kamble  | palash.kamble@opstree.com
+
+
+---
+
+# References
+
+| Link | Description |
+|-----------|-------------|
+| [Building a Java Project using Maven on Ubuntu](https://medium.com/@techbytebykiru/building-a-java-project-using-maven-on-ubuntu-b5ab091fc1df) | This article provides a comprehensive guide on building a Java project using Maven on Ubuntu. It covers installation steps, project setup, and Maven commands for compiling and managing Java projects. |
+| [Java Continuous Integration Setup Tutorial](https://www.toptal.com/java/java-continuous-integration-setup-tutorial) | This tutorial offers insights into setting up Continuous Integration (CI) for Java projects. It discusses the importance of CI, tools like Jenkins and Travis CI, and best practices for automating builds, testing, and deployment in Java development workflows. |
+
 
 
