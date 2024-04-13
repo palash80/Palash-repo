@@ -154,5 +154,57 @@ Maven is a popular build automation tool primarily used for managing dependencie
 
 
 
+---
+
+**Step 1:** Installing necessary tools
+
+1.First update the packge:
+
+<pre><code>sudo apt update</code></pre>
+
+2.Switch to sudo user (root user):
+
+<pre><code>sudo su</code></pre>
+
+3. Install JDK 11
+
+<pre><code>apt install openjdk-11-jre-headless -y</code></pre>
+
+![image](https://github.com/palash80/Palash-repo/assets/153359214/aa864747-dd65-48fd-9ca8-ae46b2870bd7)
+
+4. Install Maven
+
+<pre><code>apt install maven -y</code></pre>
+
+![image](https://github.com/palash80/Palash-repo/assets/153359214/d8b45f17-b445-4d42-a43e-69701519e9ab)
+
+5. Clone the Java project repository in the linux instance:
+
+<pre><code>git clone https://github.com/Krishpluto/BoardgameListingWebApp.git</code></pre>
+
+![image](https://github.com/palash80/Palash-repo/assets/153359214/49173137-adde-4717-9ea0-a66ea19dd2bf)
+
+
+**Step 2:** Building the Project with Maven
+  Now, navigate to your project’s directory and use Maven to build it. Maven follows a specific lifecycle consisting of phases. You can execute these phases 
+  using Maven commands:
+  Execute the Maven lifecycle by running the following command in your project directory:
+
 
  
+ <pre><code>cd BoardgameListingWebApp/</code></pre>
+
+
+**Step 4:** Building the Project with Maven
+  Maven follows a specific lifecycle consisting of phases. You can execute these phases using Maven commands:
+
+ **clean:** Cleans the project by removing the target directory.
+ **validate:** Validates the project.
+ **compile:** Compiles the source code.
+ **test:** Executes the tests.
+ **package:** Packages the compiled code into a JAR or WAR file.
+ **install:** Installs the package into the local repository.
+ **deploy:** Deploys the package to a remote repository.
+ **site:** Generates project documentation.
+
+
