@@ -1,0 +1,25 @@
+name: Branch Merge Notification
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    types: [closed]
+jobs:
+  notify_on_merge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Email Notification
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main' || github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged && github.event.pull_request.base.ref == 'main'
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 587
+          username: palash.kamble@opstree.com
+          password: ${{ secrets.GMAIL_APP_PASSWORD }}
+          to: palash.kamble@opstree.com
+          from: palash.kamble@opstree.com
+          subject: "Branch Merged into Main"
+          body: |
+            A branch has been merged into the main branch.
+            - Repository: ${{ github.repository }}
