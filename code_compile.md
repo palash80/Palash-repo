@@ -13,12 +13,12 @@
 |:---------:|--------------------------|
 | 1.      | [Introduction](#introduction)   |
 | 2.      | [Purpose](#purpose)             |
-| 3.      | [Work Flow](#work-flow)         |
-| 4.      | [Tools](#tools)                 |
-| 5.      | [Comparison](#comparison)       |
-| 6.      | [Advantages](#advantages)       |
-| 7.      | [Best Practices](#best-practices)|
-| 8.      | [Why Use Maven?](#why-use-maven)|
+| 3.      | [Prerequisites](#prerequisites)             |
+| 4.      | [Work Flow](#work-flow)         |
+| 5.      | [Tools](#tools)                 |
+| 6.      | [Comparison](#comparison)       |
+| 7.      | [Advantages](#advantages)       |
+| 8.      | [Best Practices](#best-practices)|
 | 9.      | [Proof of Concept](#proof-of-concept)|
 | 10.     | [Conclusion](#conclusion)       |
 | 11.     | [Contact](#contact)             |
@@ -44,6 +44,16 @@ In the realm of Java CI code compilation, Continuous Integration (CI) orchestrat
 ## Purpose 
 
 The primary Purpose of a Java compiler, like any compiler in programming, is to translate high-level Java source code into machine-readable instructions, represented as 0s and 1s. Once compiled, these instructions are executed to perform the intended tasks efficiently
+
+---
+
+## Prerequisites
+
+1. An Amazon Web Services (AWS) EC2 instance running Ubuntu.[Minimum t2.micro]
+2. Java Development Kit (JDK) installed on your EC2 instance.[Java 8 or later]
+3. Git for version control.
+4. A Java project hosted on GitHub. In this we have used the springboot project Source Code.
+5. Maven project build tool
 
 
 ---
@@ -167,6 +177,7 @@ Maven is a popular build automation tool primarily used for managing dependencie
 ---
 
 ## Proof of Concept
+
 
 
 
