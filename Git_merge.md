@@ -12,7 +12,6 @@
 ## Table of Content
 
 
-## Table of Content
 
 | **Serial No.** | **Content**                                |
 |:--------------:|--------------------------------------------|
