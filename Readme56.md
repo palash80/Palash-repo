@@ -1,3 +1,24 @@
+
+# How to achieve the metrics for infra monitoring
+
+| **Author**         | **Created on** | **Version** | **Last Updated by** | **Last Updated on** |
+|:------------------:|:--------------:|:-----------:|:-------------------:|:-------------------:|
+| Palash Kamble      | 22-06-2024     | 1.0         | Palash Kamble       | 22-06-2024          |
+
+---
+
+# Table of Contents
+
+1. [Introduction](#introduction)
+2. [Components of the POC](#components-of-the-poc)
+3. [Pre-requisites](#pre-requisites)
+4. [POC Implementation Steps](#poc-implementation-steps)
+5. [Conclusion](#conclusion)
+6. [Contact](#contact)
+7. [References](#references)
+
+
+
 ## Introduction
 
 This document outlines a proof of concept (POC) for achieving metrics in database monitoring using Prometheus and Grafana. The goal is to understand database behavior, resolve errors efficiently, and optimize performance.
@@ -281,5 +302,22 @@ sudo systemctl start node_exporter
 
 ![image](https://github.com/palash80/Palash-repo/assets/153359214/98f3bfad-ab87-4c53-b05b-0683727962b7)
 
+## Conclusion
 
+This document's proof of concept (POC) demonstrates using Prometheus and Grafana to monitor and optimize databases effectively. Prometheus collects metrics, Grafana visualizes them, providing insights into database performance, detecting errors, and ensuring system health. This setup supports real-time monitoring, proactive issue resolution, and performance optimization, enhancing database management efficiency.
+
+
+## Contact 
+
+|     Name         | Email  |
+| -----------------| ------------------------------------ |
+| Palash Kamble    | palash.kamble@opstree.com |
+
+
+## Reference
+
+| **Reference**       | **Link**                                                                          |
+|----------------|-------------------------------------------------------------------------------------------------|
+| Grafana        | [Install Grafana on Debian/Ubuntu](https://grafana.com/docs/grafana/latest/setup-grafana/installation/debian/) |
+| Prometheus     | [Prometheus Installation on Linux (Ubuntu)](https://medium.com/@abdullah.eid.2604/prometheus-installation-on-linux-ubuntu-c4497e5154f6) |
 
