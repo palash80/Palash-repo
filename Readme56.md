@@ -14,17 +14,17 @@
 | 1.  | [Introduction](#introduction)     |
 | 2.  | [Components of the POC](#components-of-the-poc) |
 | 3.  | [Pre-requisites](#pre-requisites) |
-| 4.  | [POC Implementation Steps](#poc-implementation-steps) |
+| 4.  | [POC ](#poc) |
 | 5.  | [Conclusion](#conclusion)         |
 | 6.  | [Contact](#contact)               |
-| 7.  | [References](#references)         |
+| 7.  | [Reference](#reference)         |
 
 
 
 
 ## Introduction
 
-This document outlines a proof of concept (POC) for achieving metrics in database monitoring using Prometheus and Grafana. The goal is to understand database behavior, resolve errors efficiently, and optimize performance.
+This document outlines a proof of concept (POC) for designing infrastructure monitoring using Prometheus and Grafana. The goal is to establish a robust system for capturing metrics, gaining insights into database behavior, efficiently resolving errors, and optimizing performance.
 
 ## Components of the POC
 
@@ -40,7 +40,7 @@ This document outlines a proof of concept (POC) for achieving metrics in databas
 
 ### 3. Error Resolution:
 
-- **Alerting:** Configure Prometheus to alert for critical database errors and resource issues.
+- **Alerting:** Configure Prometheus to alert for critical services errors and resource issues.
 - **Visualization:** Use Grafana to help identify and diagnose issues quickly through comprehensive dashboards.
 
 ### 4. Performance Optimization:
