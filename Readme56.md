@@ -284,8 +284,14 @@ WantedBy=multi-user.target</pre></code>
 <br> <tab><tab><pre><code>sudo systemctl daemon-reload
 sudo systemctl start node_exporter
 
-</pre></code><br>**OUTPUT :** <br><br>![Screenshot from 2024-06-20 06-58-32](https://github.com/MyGurukulam-P8/Sanatak_batchP8_Doc/assets/164150254/d4335cce-1eb0-4a34-9615-db725c5ea655)
-<br>
+</pre></code><br>**OUTPUT :** <br><br>![Screenshot from 2024-06-20 06-58-32](https://github.com/MyGurukulam-P8/Sanatak_batchP8_Doc/assets/164150254/d4335cce-1eb0-4a34-9615-db725c5ea655)<br>
+
+
+
+
+
+---------
+
 
 
 * Installation grafana tool
@@ -323,4 +329,7 @@ This document's proof of concept (POC) demonstrates using Prometheus and Grafana
 |----------------|-------------------------------------------------------------------------------------------------|
 | Grafana        | [Install Grafana on Debian/Ubuntu](https://grafana.com/docs/grafana/latest/setup-grafana/installation/debian/) |
 | Prometheus     | [Prometheus Installation on Linux (Ubuntu)](https://medium.com/@abdullah.eid.2604/prometheus-installation-on-linux-ubuntu-c4497e5154f6) |
+
+
+
 
