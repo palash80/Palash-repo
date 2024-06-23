@@ -279,3 +279,6 @@ sudo systemctl start node_exporter
 
 **OUTPUT**
 
+![image](https://github.com/palash80/Palash-repo/assets/153359214/98f3bfad-ab87-4c53-b05b-0683727962b7)
+
+
