@@ -13,7 +13,7 @@
 | 1.     | [Introduction](#introduction)            |
 | 2.     | [Components of the POC](#components-of-the-poc) |
 | 3.     | [Pre-requisites](#pre-requisites)        |
-| 4.     | [Proof of Concept (POC)](#proof-of-concept-poc) |
+| 4.     | [POC](#poc) |
 | 5.     | [Conclusion](#conclusion)                |
 | 6.     | [Contact](#contact)                      |
 | 7.     | [Reference](#reference)                  |
@@ -65,7 +65,7 @@ Ensure the following hardware, software, and security requirements are met.
 
 
 
-## Proof of Concept(POC) 
+## POC 
 
 1. Install Prometheus on server.
 
