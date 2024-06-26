@@ -1,5 +1,4 @@
-
-# How to achieve the metrics for infra monitoring
+# How to Achieve Metrics for Infrastructure Monitoring
 
 | **Author**         | **Created on** | **Version** | **Last Updated by** | **Last Updated on** |
 |:------------------:|:--------------:|:-----------:|:-------------------:|:-------------------:|
@@ -9,97 +8,65 @@
 
 # Table of Contents
 
-| Sr no. | Topic                            |
-|-----|----------------------------------|
-| 1.  | [Introduction](#introduction)     |
-| 2.  | [Components of the POC](#components-of-the-poc) |
-| 3.  | [Pre-requisites](#pre-requisites) |
-| 4.  | [POC ](#poc) |
-| 5.  | [Conclusion](#conclusion)         |
-| 6.  | [Contact](#contact)               |
-| 7.  | [Reference](#reference)         |
+| Sr No. | Topic                                    |
+|--------|------------------------------------------|
+| 1.     | [Introduction](#introduction)            |
+| 2.     | [Components of the POC](#components-of-the-poc) |
+| 3.     | [Pre-requisites](#pre-requisites)        |
+| 4.     | [Proof of Concept (POC)](#proof-of-concept-poc) |
+| 5.     | [Conclusion](#conclusion)                |
+| 6.     | [Contact](#contact)                      |
+| 7.     | [Reference](#reference)                  |
 
-
-
+---
 
 ## Introduction
 
-This document outlines a proof of concept (POC) for designing infrastructure monitoring using Prometheus and Grafana. The goal is to establish a robust system for capturing metrics, gaining insights into database behavior, efficiently resolving errors, and optimizing performance.
+This document outlines a proof of concept (POC) for designing infrastructure monitoring using Prometheus and Grafana. The goal is to establish a robust system for capturing metrics, gaining insights into infrastructure behavior, efficiently resolving errors, and optimizing performance.
+
+---
 
 ## Components of the POC
 
-### 1. Tool Selection:
+| **Component**      | **Description**                                                                                           |
+|--------------------|-----------------------------------------------------------------------------------------------------------|
+| **Prometheus Setup**  | Prometheus is used to collect and store metrics from various sources, including the PostgreSQL database and system. |
+| **Grafana Setup**     | Grafana is employed to visualize the collected metrics and create informative dashboards.                 |
+| **Prometheus Exporters** | Exporters are used to expose metrics from the database and server for Prometheus to scrape.            |
+| **Alerting**          | Prometheus is configured to alert for critical service errors and resource issues.                        |
+| **Visualization**     | Grafana is used to create comprehensive dashboards to identify and diagnose issues quickly.                |
+| **Performance Optimization** | Metrics are analyzed to identify performance bottlenecks and optimize the system.                     |
 
-- **Prometheus Setup:** Prometheus is used to collect and store metrics from the PostgreSQL database and system.
-- **Grafana Setup:** Grafana is employed to visualize these metrics and create informative dashboards.
-
-### 2. Monitoring Setup:
-
-- **Prometheus Exporters:** Utilize exporters to expose metrics from the database and server to Prometheus.
-- **Grafana Dashboards:** Create dashboards in Grafana for real-time monitoring and analysis.
-
-### 3. Error Resolution:
-
-- **Alerting:** Configure Prometheus to alert for critical services errors and resource issues.
-- **Visualization:** Use Grafana to help identify and diagnose issues quickly through comprehensive dashboards.
-
-### 4. Performance Optimization:
-
-- **Metrics Analysis:** Use Prometheus to collect detailed performance metrics.
-- **Dashboards:** Use Grafana to visualize trends and pinpoint performance bottlenecks.
+---
 
 ## Pre-requisites
 
 Ensure the following hardware, software, and security requirements are met.
 
-### System Requirements
+| **Component**       | **Hardware Specifications**             | **Minimum Requirements**         |
+|---------------------|-----------------------------------------|----------------------------------|
+| **Application Server** | Processor: Dual-core                  | RAM: 4GB                         |
+| **Prometheus**      | Disk: 20GB                              | OS: Ubuntu 22.04 LTS             |
+| **Grafana**         | Instance Type: T2.medium                |                                  |
 
-1. **Application**
+| **Dependencies**    | **Name**       | **Version** | **Description**             |
+|---------------------|----------------|-------------|-----------------------------|
+| **Prometheus**      | Prometheus     | 2.53.0      | Monitoring application      |
+| **Exporter**        | Node Exporter  | 1.8.1       | Expose metrics for Prometheus|
+| **Grafana**         | Grafana        | 10.1.3      | Visualization tool          |
+| **Alert Manager**   | Alert Manager  | 0.27.0      | Alerts for warnings and errors |
 
-| Hardware Specifications | Minimum |
-|-------------------------|---------|
-| Processor               | Dual-core |
-| RAM                     | 4GB       |
-| Disk                    | 20GB      |
-| OS                      | Ubuntu 22.04 LTS |
-| Instance Type           | T2.medium |
+## Work flow 
 
-
-2. **Prometheus**
-
-| Hardware Specifications | Minimum |
-|-------------------------|---------|
-| Processor               | Dual-core |
-| RAM                     | 4GB       |
-| Disk                    | 20GB      |
-| OS                      | Ubuntu 22.04 LTS |
-| Instance Type           | T2.medium |
-
-3. **Grafana**
-
-| Hardware Specifications | Minimum |
-|-------------------------|---------|
-| Processor               | Dual-core |
-| RAM                     | 4GB       |
-| Disk                    | 20GB      |
-| OS                      | Ubuntu 22.04 LTS |
-| Instance Type           | T2.medium |
-
-### Dependencies
-
-| Name             | Version | Description                     |
-|------------------|---------|---------------------------------|
-| Prometheus       | 2.53.0  | Monitoring application          |
-| Exporter         | 1.8.1   | Expose metrics for Prometheus   |
-| Grafana          | 10.1.3  | Visualization tool              |
-| Alert Manager    | 0.27.0  | Alerts for warnings and errors  |
-
+![image](https://github.com/palash80/Palash-repo/assets/153359214/07da1374-b60a-4eb6-9b21-2a3d1334f094)
 
 
 
 ##  POC 
 
-2. Install Prometheus on server.
+1. Install Prometheus on server.
+![image](https://github.com/palash80/Palash-repo/assets/153359214/6664f9ab-1151-4f05-a69b-d505e1fedcf3)
+
 
 - Download the source using curl, untar it, and rename the extracted folder to prometheus-files.
 <details>
@@ -217,7 +184,9 @@ sudo systemctl status prometheus</pre></code><br><br>**OUTPUT :** <br>![Screensh
 
 </details>
 
-3. Install exporter on Db server to expose metrics.
+2. Install exporter on Db server to expose metrics.
+![image](https://github.com/palash80/Palash-repo/assets/153359214/5162d058-c769-4d2b-8590-a70357a0be14)
+
 
 <details>
   <summary>Node Exporter  Installation Steps</summary>
@@ -294,7 +263,10 @@ sudo systemctl start node_exporter
 
 
 
-* Installation grafana tool
+3 Installation grafana tool
+
+![image](https://github.com/palash80/Palash-repo/assets/153359214/b6c8f2c5-3304-4e04-93cc-d26fb5b0a0be)
+
 
 (https://grafana.com/docs/grafana/latest/setup-grafana/installation/debian/)
 
