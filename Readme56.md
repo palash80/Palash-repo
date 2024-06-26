@@ -58,6 +58,9 @@ Ensure the following hardware, software, and security requirements are met.
 
 ## Work flow 
 
+
+
+
 ![image](https://github.com/palash80/Palash-repo/assets/153359214/07da1374-b60a-4eb6-9b21-2a3d1334f094)
 
 
@@ -65,6 +68,8 @@ Ensure the following hardware, software, and security requirements are met.
 ##  POC 
 
 1. Install Prometheus on server.
+
+
 ![image](https://github.com/palash80/Palash-repo/assets/153359214/6664f9ab-1151-4f05-a69b-d505e1fedcf3)
 
 
@@ -185,7 +190,12 @@ sudo systemctl status prometheus</pre></code><br><br>**OUTPUT :** <br>![Screensh
 </details>
 
 2. Install exporter on Db server to expose metrics.
+
+
+
 ![image](https://github.com/palash80/Palash-repo/assets/153359214/5162d058-c769-4d2b-8590-a70357a0be14)
+
+
 
 
 <details>
@@ -264,6 +274,8 @@ sudo systemctl start node_exporter
 
 
 3 Installation grafana tool
+
+
 
 ![image](https://github.com/palash80/Palash-repo/assets/153359214/b6c8f2c5-3304-4e04-93cc-d26fb5b0a0be)
 
