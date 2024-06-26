@@ -65,7 +65,7 @@ Ensure the following hardware, software, and security requirements are met.
 
 
 
-##  POC 
+## Proof of Concept(POC) 
 
 1. Install Prometheus on server.
 
